@@ -1,0 +1,13 @@
+
+/* CAROUSEL CSS */
+#myCarousel .item{
+	height: 600px;
+	background-color: Blue;
+};
+#slide1{
+	background: url("../images/meltingPot.jpg");
+};
+
+@media (max-width: 480px){
+
+};

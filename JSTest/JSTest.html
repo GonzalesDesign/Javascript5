@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en">
+  <meta charset = "UTF-8">
+  <title>JavaScript Code Test</title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href = "http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans:400,300|Raleway|Cinzel"
+        rel = "stylesheet" type = "text/css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <style>
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+      font-family: "Open Sans";
+      font-size: medium;
+      margin-top: 10px;
+    }
+
+    .insideContainer {
+      height: auto;
+      /*margin: 20px 20px 10px 20px;*/
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 20px 20px 10px 20px;
+      background-color: #cccccc;
+      border: solid 1px #444444;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .bgImg {
+      height: 2000px;
+      background-image: url("midArea.png");
+      background-repeat: no-repeat;
+      /*background-position: center;*/
+      /*background-position: 100% 100%*/
+      background-size: 100%;
+      /*overflow: visible;*/
+      background-color: #005fb3;
+    }
+
+    .photo {
+      width: 500px;
+      height: inherit;
+      z-index: 10;
+      position: relative;
+      left: 0px;
+      top: 0px;
+    }
+
+    .bow {
+      /*position: absolute;*/
+      float: right;
+      width: 500px;
+      height: inherit;
+      z-index: 2;
+    }
+
+    .hammer {
+      width: inherit;
+      height: inherit;
+      z-index: 3;
+      position: relative;
+      left: 100px;
+      top: 300px;
+    }
+
+    .dagger {
+      width: inherit;
+      height: inherit;/*500px;*/
+      background-image: url("soulDagger.jpg");
+      /*background-repeat: no-repeat;*/
+      /*background-position: center;*/
+      /*background-position: 100% 100%*/
+      background-size: 50%;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class = "container-fluid">
+  <div class = "insideContainer">
+    <div class = "row">
+      <div class = "col-sm-6">
+        <h1>TEST TITLE</h1>
+
+        <p>
+          Odee and John poot poot are the cutest and pinaka pilyong bata.
+        </p>
+      </div>
+      <div class = "col-sm-6">
+        <h1>TEST TITLE</h1>
+
+        <p>
+          Odee and John poot poot are the cutest and pinaka pilyong bata.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class = "container-fluid bgImg">
+  <div>
+    <img class = "photo" id = "photo" src = "unfurlingBackground.jpg"/>
+    <img class = "bow" id = "bow" src = "hereticBow.jpg"/>
+  </div>
+  <div>
+    <img class = "hammer" id = "hammer" src = "crusherHammer.jpg"/>
+  </div>
+  <div class = "dagger" id = "dagger"></div>
+
+</div>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src = "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<!--<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.2/angular.min.js"></script>-->
+<!--<script src = "JavascriptFileName.js"></script>-->
+<script>
+  $(document).ready(function () {
+    /*window.scrollTo(200, 0);*/
+    var tMx = TweenMax;
+    var photo = document.getElementById("photo");
+    var bow = document.getElementById("bow");
+    var hammer = document.getElementById("hammer");
+    var dagger = document.getElementById("dagger");
+    var stageWidth = $(window).width(); //Stage width
+    console.log("stageWidth: ", stageWidth);
+    var i = 0;
+    var aDaggers = [];
+
+    tMx.to(dagger, 0, {css: {position: "absolute", x: 900, width: 400, opacity: .95}});
+    hammer.style.cursor = "pointer"; //not working for some reason
+    //dagger.addEventListener("click", daggerRotateFunct);
+    hammer.addEventListener("click", daggerRotateFunct);
+    function daggerRotateFunct() {
+      {css: {position: "absolute", width: "400px", opacity: .75, rotation: (360 * 2)}, ease: Elastic.easeInOut});
+      tMx.to(dagger, 4,
+    };
+
+    //Cloning--------------------//
+    var sourceImage = document.createElement('img'),
+      imgContainer = dagger;//document.getElementById("content");
+      sourceImage.src = "soulDagger.jpg";
+      imgContainer.appendChild(sourceImage);
+    function cloneImg(){
+      //tMx.to(sourceImage, 0, {css: {position: "absolute", x: 300, width: 400, opacity: .75}});
+      //imgContainer.appendChild(sourceImage.cloneNode(true));
+      //tMx.to(imgContainer, 0, {css: {position: "absolute", x: 300, width: 400, opacity: .75}});
+      //console.log("imgContainer: ", imgContainer);
+      //var multiImgContainer =
+      //imgContainer.appendChild(sourceImage.cloneNode(true));
+      var daggerClone = $(sourceImage).clone(true);
+      tMx.to(sourceImage, 1, {css: {position: "absolute", x: 150 * i, y: 150 * i, width: 300, opacity: .5}});
+    };
+
+  for (i = 0; i < 4; i++) {
+    //sourceImage.left = 100 * i;
+    //tMx.to(sourceImage, 1, {css: {position: "absolute", x: 150 * i, y: 150 * i, width: 300, opacity: .5}});
+    cloneImg();
+  }
+
+
+
+    /*var daggerClone = $('.dagger').clone(true);
+    //$('.dagger').remove();
+    console.log("daggerClone: ",daggerClone);
+
+    var copiedObject = jQuery.extend({}, dagger)
+    console.log("copiedObject: ",copiedObject);
+    copiedObject.x = +10;
+
+    for (i = 0; i < 4; i++) {
+      var obj = [i];
+      console.log(obj.i);
+      var newDagger = daggerClone.clone(true);
+      console.log("newDagger: ",newDagger);
+      newDagger.x = +10;
+      //$(newDagger).find();
+      //$(dagger).clone().attr('dagger', 'dagger' + i).appendTo(aDaggers[i]);
+      //console.log(aDaggers[i]);
+      //console.log('dagger' + [i]);
+      //aDaggers[aDaggers.length] = 'dagger' + i;
+      //tMx.to(aDaggers[0], 4, {css: {position: "absolute", width: "400px", opacity: .25, rotation: 360}, ease:
+        //Elastic.easeInOut});
+    }*/
+
+    tMx.to(bow, 0, {css: {position: "absolute", x: 0, width: 300, opacity: .95}});
+    console.log("bow width:", bow.width);
+
+
+    //photo.x = 200px;
+    setTimeout(function () {
+      //tMx.to(photo, 2, {width:"200px", opacity:.5});
+      tMx.to(photo, 4, {css: {position: "absolute", x: 500, scaleX: .5, scaleY: .5, opacity: .95}, ease: Sine.easeOut});
+      tMx.to(hammer, 4, {
+        css: {position: "absolute", width: "400px", opacity: .75, rotation: 360},
+        ease: Elastic.easeInOut
+      });
+
+
+    }, 2000);
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    console.log("document loaded");
+  });
+
+  $(window).load(function () {
+    console.log("window loaded");
+  });
+</script>
+
+<!--<script>
+  var dropSpeed = 3750;
+  var spawnSpeed = 2000;
+  var i = 0;
+  function makeSymbol(sym) {
+    setTimeout(function () {
+
+      if (dropSpeed > 1500) {
+        dropSpeed = dropSpeed - 350;
+      }
+      if (spawnSpeed > 50) {
+        spawnSpeed = spawnSpeed - 231;
+      }
+      var aSymbol = sym.createChildSymbol("aSymbol", "stage");
+      console.log("aSymbol: ",aSymbol);
+      i = i + 1;
+      symbols[i] = aSymbol.getSymbolElement();
+      symbols[i].animate({top: "950px"}, dropSpeed); //uses the changed dropspeed
+      makeSymbol(sym);
+    }, spawnSpeed); //does not use the change spawnSpeed but keeps using the 2000
+  }
+
+  makeSymbol(aSymbol);
+</script>-->
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en">
+    <meta charset = "UTF-8">
+    <title>Gonzales Design 2016 Portfolio</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href = "http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans:400,300|Raleway|Cinzel"
+          rel = "stylesheet" type = "text/css">
+   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700,900' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            padding: 0px;
+        }
+        h1 {
+            font-family: "Open Sans";
+        }
+
+        .titolo{
+          font-family: "Merriweather";
+          font-weight: 900;
+          font-size: 60px;
+          color: royalblue;
+          line-height: 200%;
+          padding: 0 0 0 0px;
+          text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+        }
+
+        p {
+            font-family: "Open Sans";
+            font-size: medium;
+            margin-top: 10px;
+        }
+        h3 {
+          font-family: "Merriweather";
+          font-size: 18px;
+          font-weight: 300;
+          font-style: italic;
+          line-height: 200%;
+          /*text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);*/
+        }
+        .clasTest { /*This class is being defined in controller.js*/
+          font-family: "Merriweather";
+          font-weight: 900;
+          font-size: 22px;
+          color: royalblue;
+          line-height: 200%;
+          padding: 0 0 0 20px;
+          /*text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);*/
+        }
+        .p1Class {
+            margin: 20px;
+            padding: 20px;
+            border: solid 3px grey;
+        }
+
+        .container-fluid {
+            height: auto;
+            /*margin: 20px 20px 10px 20px;
+            padding: 20px;*/
+            background-color: white;
+            border: solid 1px #444444;
+            border-radius: 10px;
+        }
+
+        .imgClass {
+            width: 50%;
+        }
+
+        .box {
+            width:auto;
+            height:auto;
+            position:relative;
+            border-radius:4px;
+            margin-top:4px;
+            padding: 6px;
+            display:inline-block
+        }
+
+        .green{
+            background-color:#6fb936;
+        }
+        .orange{
+            background-color:orange;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class = "container-fluid">
+    <div class = "row">
+        <div class = "col-sm-6">
+            <h1 class="titolo">Test Title</h1>
+
+            <p>
+                JSON (JavaScript Object Notation) is a lightweight data-interchange format.
+            </p>
+        </div>
+
+        <div class = "col-sm-6">
+            <h1 class="titolo">Test Title</h1>
+
+            <p>
+                Odee and John poot poot are the cutest and pinaka pilyong bata.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div class = "container-fluid">
+    <div>
+        <img id="imgId" class="imgClass" src="images/YelloWFerrari.jpg">
+    </div>
+    <!--<div class="box green"></div>
+    <div class="box orange"></div>-->
+
+    <button id="mybtn" class="box green">Animate Right</button>
+    <button id="mybtn2" class="box orange">Animate Left</button>
+
+</div>
+
+<div id="p1" class="p1Class">RESULTS
+    <div id="results"></div>
+</div>
+
+<div class = "container-fluid">
+  <div id="imgResults"></div>
+</div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.2/angular.min.js"></script>
+
+<!--CDN link for the latest TweenMax-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+<script src = "controllers.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+/*!
+ * Custom CSS added for the carousel.css. Bootstrap v3.3.2 (http://getbootstrap.com)
+ * Copyright 2015 GonzalesDesign
+ */
+/*----- Init
+==========================================================*/
+*{ margin: 0; padding: 0; }
+/*----- Main Container: It holds everything
+==========================================================*/
+ .container{
+ 	/*width: 100%;*/
+ 	width: 90%;
+ 	padding: 0px;
+ 	border: 1px solid blue;
+ };
+ /*----- Text Formatting
+ ==========================================================*/
+
+div#slideMainTitleID{
+   font-family: Ubuntu; font-size: 10em;
+}
+.lrgImgTitle{
+   font-family: Ubuntu; font-size: 5em;
+   /*float: right;*/
+   /*margin-right: 50px; */
+   /*line-height: 300px; */
+   padding: 20px;
+   color: linen;
+   border: 1px solid red;
+   opacity: 1;
+}
+
+div.carouslCSSTitle{
+   font-family: Ubuntu; font-size: 10em;
+   float: right;
+   margin-right: 20px;
+   line-height: 300px;
+   color: White;
+   border: 1px solid red;
+   opacity: .75;
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+   z-index: 500;
+}
+
+div.carousel-caption{
+	/*width: 100%;*/
+	border: 1px solid orange;
+}
+
+h1.bigTitle{
+   font-family: Ubuntu; font-size: 10em;
+	width: 100%;
+	margin-left: 200px;
+	padding-left: 0px;
+	border: 1px solid red;
+	text-align: right;
+}
+
+h1.colTitle{ /*Column Title*/
+	font-family: Merriweather; font-size: 2em;
+	padding: 20px 0px 0px 0px;
+	border: 0px solid red;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+h1.h1Custom{
+   font-family: Merriweather; font-size: 4em; line-height:90%;
+	padding: 0px 0px 0px 0px;
+	border: 0px solid red;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+p.paraWhiteShadow{ /*---=====| paraWhiteShadow: Paragraph text style with shadow |=====---*/
+	font-family: Merriweather; font-size: 16px;
+	border: 0px solid red;
+	color: white;
+	text-align: left;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+/*----- Navigation
+==========================================================*/
+
+/*----- Fullscreen images with text inside
+==========================================================*/
+
+/*----- Carousel: CSS based background images
+==========================================================*/
+div#home{
+   background: url("../../images/elNido/elNido1.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#portfolio{
+   background: url("../../images/elNido/elNido1.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#about{
+   background: url("../../images/elNido/elNido1.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#contact{
+   background: url("../../images/elNido/elNido1.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#slide1{
+   background: url("../../images/elNido/elNido1.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#slide2{
+   background: url("../../images/elNido/elNido2.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#slide3{
+   background: url("../../images/elNido/elNido4.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#slide4{
+   background: url("../../images/elNido/elNido7.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#slide5{
+   background: url("../../images/elNido/elNido7.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#slide6{
+   background: url("../../images/elNido/elNido7.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#slide7{
+   background: url("../../images/elNido/elNido7.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#bgC4Testa{
+   background: url("../../images/elNido/elNido1.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#bgC4Testb{
+   background: url("../../images/elNido/elNido2.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#bgC4Testc{
+   background: url("../../images/elNido/elNido4.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#bgC4Testaa{
+   background: url("../../images/elNido/elNido1.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#bgC4Testbb{
+   background: url("../../images/elNido/elNido2.jpg") no-repeat center top;
+   background-size: cover;
+}
+div#bgC4Testcc{
+   background: url("../../images/elNido/elNido4.jpg") no-repeat center top;
+   background-size: cover;
+}
+
+/*----- Carousel: Inline images
+==========================================================*/
+ #carouselContainerID{
+	/*width: 100%;
+	border: 10px solid blue;
+	position: relative;*/
+ }
+
+ /*---| carousel-indicators: Are the buttons at he bottom of the carousel screen |---*/
+ .carousel-indicators{
+ 	border: 1px solid blue;
+ }
+a.left{
+ 	border: 1px solid orange;
+ }
+ a.right{
+ 	border: 1px solid orange;
+ }
+
+
+div.row{ /*Row for the columnar section*/
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	border: 0px solid green;
+	background-color: white;
+}
+div.colBrdr{ /*Column Border: for testing*/
+	height: 300px;
+	border: 0px solid dodgerBlue;
+}
+
+ #titleContainerXXX{
+	font-family: Ubuntu;
+	font-size: 1em;
+	margin: 200px;
+	/*width: 10%;
+	height: 300px;*/
+	border: 1px solid magenta;
+	float: right;
+	/*margin: 0;
+	float: right;
+	overflow: visible;
+	position: fixed;*/
+	z-index: 500;
+}
+
+
+
+/*----- Miscellaneous CSS
+==========================================================*/
+
+/*
+.carousel {
+	width: 100%;
+	height: auto;
+	padding: 100px;
+	margin: 100px;
+}
+.carousel .item {
+	width: 100%;
+	height: 550px;
+	background-color: lightBlue;
+	border: 2px solid blue;
+}
+*/
+
+#titlePalawan3{
+	font-family: Ubuntu; font-size: 10em;
+	float: right;
+	margin-top: 0;
+	margin-left: 900px;
+	line-height: 300px;
+	color: White;
+	border: 1px solid red;
+	opacity: .75;
+	position: absolute;
+	text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+	z-index: 500;
+}
+
+/*
+#titlePalawan4{
+	font-family: Ubuntu; font-size: 10em;
+	float: right;
+	margin-top: 300px;
+	margin-right: 50px;
+	line-height: 300px;
+	color: red;
+	border: 10px solid red;
+	opacity: .75;
+	z-index: 500;
+	position: absolute;
+}
+*/
+
+.navbar{
+	border: 0px solid red;
+	opacity: .5;
+}
+.navbar-brand{
+	padding-top: 0px;
+}
+.navbar-inverse {
+	background-color: #222;
+	/*border-color: #C801FF;*/
+	border: 0px solid red;
+	opacity: .85;
+}
+.carousel .item {
+	margin: 0 auto;
+}
+.imgHolder{
+	margin-top: 0px;
+	width: 100%;
+	height: 768px;
+	text-align: left;
+	border: 0px solid blue;
+	overflow: visible;
+}
+/*Automatically fit image inside div. Resize image to fit div.*/
+#myCarouselCSS img{
+	/*Set images to 1366x768 16:9 ratio*/
+	width: 100%;
+	height: auto;
+	border: 0px solid green;
+	/*margin-left: auto;
+   margin-right: auto;*/
+}
+#myCarouselInline img{
+	/*Set images to 1366x768 16:9 ratio*/
+	width: 100%;
+	height: auto;
+	border: 0px solid green;
+	/*margin-left: auto;
+   margin-right: auto;*/
+}
+
+.footerContainer{
+	/*width: 100%;
+	height: auto;*/
+	border: 0px solid gray;
+	padding-top: 0px;
+	margin: 0 auto;/*horizontal alignment. centering, margin: 0 auto*/
+}
+/*
+.carousel-inner > .item > img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+.carousel-inner {
+	border: 2px solid red;
+	position: relative;
+	height: 80%;
+	overflow: hidden;
+	background-size: cover;
+}
+.item{
+	margin-top: 0px;
+	padding-top: 0px;
+	width: 100%;
+	height: 768px;
+	overflow: visible;
+	background-size: cover;
+}
+*/
+/*
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+*/
+/*
+.carousel-inner > .item > img,{
+	  height: 1000px;
+	  border: 1px solid orange;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: lightGray;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=50);
+  opacity: .5;
+  border: 1px solid;
+}
+*/

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en">
+  <meta charset = "UTF-8">
+  <title>JavaScript Cloning Test</title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href = "http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans:400,300|Raleway|Cinzel"
+        rel = "stylesheet" type = "text/css">
+  <style>
+    h1 {
+      font-family: "Open Sans";
+    }
+
+    p {
+      font-family: "Open Sans";
+      font-size: medium;
+      margin-top: 10px;
+    }
+
+    .insideContainer {
+      height: auto;
+      /*margin: 20px 20px 10px 20px;*/
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 20px 20px 10px 20px;
+      background-color: #cccccc;
+      border: solid 1px #444444;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .bgImg {
+      height: 2000px;
+      background-image: url("midArea.png");
+      background-repeat: no-repeat;
+      /*background-position: center;*/
+      /*background-position: 100% 100%*/
+      background-size: 100%;
+      /*overflow: visible;*/
+      background-color: #005fb3;
+      z-index: -10;
+    }
+
+    .photo {
+      width: 500px;
+      height: inherit;
+      z-index: 10;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+
+    .bow {
+      width: 500px;
+      height: inherit;
+      z-index: 2;
+    }
+
+    .hammerContainer {
+      position: relative;
+      /*float: left;*/
+      z-index: 3;
+    }
+
+    .hammer {
+      width: 500px;
+      height: inherit;
+      z-index: 4;
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+
+    .dagger {
+      height: 500px;
+      background-image: url("soulDagger.jpg");
+      background-repeat: no-repeat;
+      /*background-position: center;*/
+      /*background-position: 100% 100%*/
+      background-size: 50%;
+    }
+
+    .imgCont {
+      /*position: relative;*/
+      /*left: 300px;
+      top: 500px;*/
+      /*height: 200px;
+      width: 200px;
+      opacity: 50%;*/
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class = "container-fluid">
+  <div class = "insideContainer">
+    <div class = "row">
+      <div class = "col-sm-6">
+        <h1>Test Title</h1>
+
+        <p>
+          Odee and John poot poot are the cutest and pinaka pilyong bata.
+        </p>
+      </div>
+      <div class = "col-sm-6">
+        <h1>Test Title</h1>
+
+        <p>
+          Odee and John poot poot are the cutest and pinaka pilyong bata.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "container-fluid bgImg">
+  <div class = "hammerContainer">
+    <!--<div>
+      <img class = "photo" id = "photo" src = "unfurlingBackground.jpg"/>
+      <img class = "bow" id = "bow" src = "hereticBow.jpg"/>
+    </div>
+    <div>
+      <img class = "hammer" id = "hammer" src = "crusherHammer.jpg"/>
+    </div>
+    <div class = "dagger" id = "dagger"></div>-->
+
+    <img class = "hammer" src = "crusherHammer.jpg" ?>
+    <!-- And this being where you want to copy it -->
+    <div class = "imgCont"></div>
+  </div>
+</div>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src = "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<!--<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.2/angular.min.js"></script>-->
+<!--<script src = "JavascriptFileName.js"></script>-->
+<script>
+  $(document).ready(function () {
+    var tMx = TweenMax;
+
+    //-----• Scrolling •-----//
+    var scrollAmount = $(window).scrollTop();
+    console.log("scrollAmount: ", scrollAmount);
+    tMx.ticker.addEventListener("tick", fScrollToTarget);
+    function fScrollToTarget() {
+      console.log("fScrollToTarget");
+      fRemoveEvntListnr(fScrollToTarget);
+    }
+
+    var j = 0;
+
+    function fRemoveEvntListnr(myFunct) {
+      j++;
+      if (j > 60) {
+        j = 0;
+        tMx.ticker.removeEventListener("tick", myFunct);
+      }
+    };
+
+
+    //window.addEventListener("scroll", parallax, false);
+
+    //-----• Cloning •-----//
+    $('.hammer').clone().appendTo('.imgCont');
+    tMx.to('.imgCont', 5, {css: {position: "absolute", x: 900, width: 400, opacity: .25}});
+  });
+</script>
+
+</body>
+</html>

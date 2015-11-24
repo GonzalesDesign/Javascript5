@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Infinite Site 01: Navigation</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Content">
+	<meta name="Odee" content="GonzalesDesign RLGonzales">
+	<!--link rel="icon" href="../../favicon.ico"-->
+
+	<!--|==========================================| LOCAL CSS |==========================================|-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/siteNav.css" rel="stylesheet">
+	<link href="css/infiniteSite.css" rel="stylesheet">
+	<!--||===========================================================================================================||-->
+
+	<!--|==========================================| CDN CSS |==========================================|-->
+	<!-- Latest compiled and minified CSS -->
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300italic,300,700' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans:400,300|Raleway|Cinzel' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Teko|Khand|PT+Sans|Metal+Mania|Ubuntu+Condensed|Open+Sans:400,300|Raleway|Play|Cinzel|Cinzel+Decorative|Six+Caps|Rye|Ruthie' rel='stylesheet' type='text/css'> -->
+
+	<!--||===========================================================================================================||-->
+	
+	<!--|==========================================| PAGE CSS |==========================================|-->
+	<!--style>
+		.navbar-headerX{
+			border: 0px solid #aaa;
+		};
+		/*TEST*/
+	.borderTest{
+		border: 1px solid red;
+	}
+
+	</style-->
+	<!--||===========================================================================================================||-->
+	
+</head>
+<!--============| end of head |============-->
+
+<body id="bodyID"> 
+<!-- <body data-spy="scroll" data-target="#nav"> -->
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navX"> <!-- navbar-default navbar-inverse-->	
+	<!-- Branding logo -->
+	<a class="navbar-brand" href="#"><img src="images/RLG_Logo.png" alt="GonzalesDesign" id="logoID"></a>
+	<!-- Collapsed menu bar with icon-bar buttons -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle Navigation</span> <!-- sr-only: for screen reader use only -->
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="navbar-brandTxt">
+			<a href="index.html" ><span class="gonzales">Gonzales</span><span class="design">Design</span></a>
+		</div>
+	</div> <!-- end navbar-header -->
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<!-- <li><a href="index.html" ><span class="gonzales">Gonzales</span><span class="design">Design</span></a></li> -->
+			<!-- <li class="active"><a href="#">Home</a></li> -->
+			<li class="dropdown">
+				<a href="#sectionWelcome" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li class="dropdown-header">Gallery:</li>
+					<li class="divider"></li>					
+					<li><a href="#">Mural Painting</a></li>
+					<li><a href="#">Digital Illustrations</a></li>
+					<li><a href="#">OwnPhones</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">Direct Links:</li>
+					<li class="divider"></li>					
+					<li><a href="#">ElNido Palawan</a></li>
+					<li><a href="#">Filipinas</a></li>
+					<li><a href="#">PlayPen</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#sectionBirdcage">About</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li class="divider"></li>
+					<li class="dropdown-header">Nav header</li>
+					<li><a href="http://www.facebook.com">Facebook</a></li>
+					<li><a href="http://www.twitter.com">Twitter</a></li>
+					<li><a href="http://www.linkedIn.com">LinkedIn</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav> <!-- end navigation -->
+
+
+<!-- Intro Banner -->
+<div class="intro-block" id="introBlockID">
+	<div class="container">
+		<div class="row rowTopPad">
+			<div class="col-xs-3 borderTest introImg">
+				<img src="images/Flat/origamiBird3.png" alt="Origami" class="img-responsive horizontalCenter">
+			</div>
+			<div class="col-xs-9 borderTest">
+				<h1 class="openSansStyle allCaps">Intro Block. <span class="openSansParagMuted">Let your ideas soar.</span></h1>
+				<p class="openSansParagMuted allCaps tPad">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex est et in obcaecati cupiditate perspiciatis error, dolores aspernatur tempora dignissimos.</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container bgImg3" id="sectionWelcome">
+	<div class="row">
+		<div class="col-md-6 borderTest">
+			<!-- <h1 class="largeH1">Section Title</h1> -->
+			<!-- <h2 class="openSansStyle">WELCOME TO OUR SITE</h2> -->
+			<p class="openSansStyle allCaps">Welcome to our site.<span class="openSansParagMuted">Design matters to us.</span></p>
+			<!-- <img src="images/Flat/origamiBird.png" alt="Origami Bird" class="horizontalCenter"> -->
+			<p class="lead openSansParag allCaps tPad">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex est et in obcaecati cupiditate perspiciatis error, dolores aspernatur tempora dignissimos.</p>
+		</div>
+		<div class="col-md-6 borderTest">
+			<!-- <h1 class="largeH1">Section Title</h1> -->
+			<img src="images/Flat/origamiBird.png" alt="Origami Bird" class="horizontalCenter">
+			<!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex est et in obcaecati cupiditate perspiciatis error, dolores aspernatur tempora dignissimos.</p> -->
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 borderTest">
+			<!-- <h1 class="largeH1">Section Title</h1> -->
+			<!-- <img src="images/Flat/origamiBird.png" alt="Origami Bird" class="horizontalCenter"> -->
+			<p class="openSansParag allCaps fontSize120">Food truck next level beard, tofu occupy VHS bicycle rights hoodie banh mi cold-pressed slow-carb. Occupy wayfarers banh mi umami. Sartorial brunch letterpress Godard direct trade Truffaut. Carles mustache ethical Truffaut bespoke chia. Tote bag fingerstache typewriter listicle Neutra, four loko banjo. Chia craft beer put a bird on it +1 fixie. Street art Thundercats Wes Anderson, pug bespoke Portland master cleanse Odd Future cred organic bitters.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container bgImg2">
+	<div class="row">
+		<div class="col-sm-9 borderTest">
+			<h1 class="openSansStyle allCaps">Portfolio. <span class="openSansParagMuted">Traditional and Digital.</span></h1>
+			<p class="openSansParagMuted allCaps fontSize150 tPad">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex est et in obcaecati cupiditate perspiciatis error, dolores aspernatur tempora dignissimos.</p>
+			<p class="openSansParagMuted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fugit hic aliquam quasi accusantium, labore sint nam magnam, earum quod alias fuga. Dolores perferendis doloribus assumenda, sequi architecto earum officia?</p>
+		</div>
+		<div class="col-sm-3 borderTest">
+			<img src="images/RLG_Logo.png" alt="Logo" class="img-responsive horizontalCenter">
+		</div>
+	</div>
+</div>
+
+<!-- <div class="container" id="sectionBirdcage"> -->
+<div class="container" id="sectionBirdcage">
+	<img src="images/Birdcage.jpg" alt="Birdcage" class="firstClass horizontalCenter" id="sectionBirdcage2">
+	<img src="images/FilipinasMural-01.jpg" alt="Filipinas" class="horizontalCenter">
+</div>
+
+
+
+<hr><hr><hr><hr><hr>
+
+<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<] FOOTER AREA [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+	<!-- <nav class="navbar navbar-inverse navbar-fixed-bottom"> -->
+<div class="footerClass footerBG">
+	<div class="container">
+		<div class="col-xs-9 col-sm-4">
+			<h4>Queen & Jack</h4>
+			<p>Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
+		</div>
+		<div class="col-xs-9 col-sm-7">
+			<h2>Lorem =Ipsum</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, error..</p>
+			<h5>2015 Copyright GonzalesDesign</h5>
+		</div>
+		<div class="col-xs-3 col-sm-1">
+			<img src="images/Flat/origamiBird4.png" alt="Cardinal Origami" class="horizontalCenter">
+		</div>
+	</div>
+</div>
+<!-- </nav> -->
+
+	<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<] JAVASCRIPTS [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--|==========================================| CDN JS |==========================================|-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
+	<!--script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script-->
+	
+	<!-- Optional theme -->
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
+	<!-- Latest compiled and minified JavaScript 3.3.2 -->
+	<!--script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script-->
+	<!--CDN link for the latest TweenMax-->
+	<!--script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script-->
+	<!--||===========================================================================================================||-->
+	<!--|==========================================| LOCAL JS |==========================================|-->
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--script src="js/docs.min.js"></script-->
+	<!--script src="js/ie-emulation-modes-warning.js"></script-->
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!--script src="js/ie10-viewport-bug-workaround.js"></script-->
+	<!--script src="js/navButtonHiliter.js"></script-->
+
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
+	<script type="text/javascript" src="js/odeEParallax.js"></script>
+
+	<!--||===========================================================================================================||-->
+	<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<] SCRIPT DECLARATIONS [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+	<script type="text/javascript"> 
+		
+   </script>
+	</body>
+</html>

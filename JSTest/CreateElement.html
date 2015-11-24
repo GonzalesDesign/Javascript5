@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en">
+  <meta charset = "UTF-8">
+  <title>document.createElement</title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href = "http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans:400,300|Raleway|Cinzel"
+        rel = "stylesheet" type = "text/css">
+  <style>
+    h1 {
+      font-family: "Open Sans";
+    }
+    p {
+      font-family: "Open Sans";
+      font-size: medium;
+      margin-top: 10px;
+    }
+    .container-fluid {
+      height: auto;
+      margin: 20px 20px 10px 20px;
+      padding-bottom: 100px;
+      background-color: #cccccc;
+      border: solid 1px #444444;
+      border-radius: 10px;
+    }
+    img {
+      width: 100%;
+    }
+    .appendClass{
+      width: 500px;
+      height: 1000; /*inherit;*//*500px;*/
+      background-color: darkred;
+      border: solid 4px darkseagreen;
+      border-radius: 10px;
+      margin: auto;
+      padding: 10px;
+      text-align: center;
+      color: beige;
+    }
+    .appendChildClass{
+      width: 400px;
+      height: 8000; /*inherit;*//*500px;*/
+      background-color: cadetblue;
+      border: solid 1px darkgray;
+      border-radius: 10px;
+      margin: auto;
+      text-align: center;
+      color: beige;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class = "container-fluid">
+  <div class = "row">
+    <div class = "col-sm-6">
+      <h1>TITOLO UNO</h1>
+
+      <p>
+        Odee and John poot poot are the cutest and pinaka pilyong bata.
+      </p>
+    </div>
+    <div class = "col-sm-6">
+      <h1>TITOLO DOS</h1>
+
+      <p>
+        Odee and John poot poot are the cutest and pinaka pilyong bata.
+      </p>
+    </div>
+  </div>
+</div>
+<h1><div class="appendClass" id="appendId">
+    <div class="appendChildClass" id="appendChildId"></div>
+</div></h1>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src = "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<!--<script src = "JavascriptFileName.js"></script>-->
+<script>
+  $(document).ready(function () {
+    var element = Object.assign(document.createElement('div'), {
+      className: 'foo bar',
+      id: 'qux',
+      innerHTML: 'SOUL DAGGER'
+    });
+    console.log(element.innerHTML);
+    appendId.appendChild(element);
+  });
+</script>
+
+<script>
+  var tMx = TweenMax;
+  var myImage = new Image(100);
+  myImage.src = 'soulDagger.jpg';
+  //document.body.appendChild(myImage);
+  appendChildId.appendChild(myImage);
+  console.log("myImage: ", myImage);
+  /*tMx.to(appendChildId, 2, {css: {position: "absolute", x: 0, y: 0, width: '10%', opacity: .95}});*/
+  tMx.to(appendChildId, 2, {css: {position: "relative", width: '100%'}});
+
+</script>
+</body>
+</html>

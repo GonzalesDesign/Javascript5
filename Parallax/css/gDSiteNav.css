@@ -1,0 +1,111 @@
+
+/*-----=====| Navigation |=====-----*/
+.nav {
+	padding-left: 20px;
+}
+.navbar{
+	opacity: 1;
+  /*border: 1px solid red;*/
+}
+.navbar-nav {
+	margin: 7.5px -15px;
+	font-size: 18px;
+  /*border: 1px solid purple;*/
+}
+/*.navbar-brand{
+	float: left;
+	height: 50px;
+	/!*font-size: 18px;*!/
+	line-height: 20px;
+	/!*width: 100px;*!/
+	/!*height: 50px;*!/
+	/!*padding: 0px;*!/
+	/!*margin-left: 100px;*!/
+	border: 1px solid yellow;
+}*/
+#logoID {
+  width: 150px;
+  display: block;
+  margin-top: -50px;
+  /*border: solid 1px red;*/
+}
+.navbar-brandTxt{
+	margin: 20px 20px 0px -20px;
+  border: 1px solid black;
+}
+/*.navbar-brand>img {
+	display: block;
+	margin-top: 5px;
+}*/
+
+/*---• Horizontal nav bar •---*/
+.navbar-inverse {
+	background-color: #ffcf11; /*#0B8EBF;*/
+  height: 40px;
+  margin-top: 20px;
+  /*border: 1px solid grey;*/
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	color: orangeRed;
+	background-color: #0B8EBF; /*orangeRed;*/
+}
+.navbar-inverse .navbar-nav>li>a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+	color: #292927;
+}
+
+.navbar-nav .open .dropdown-menu>li>a {
+  color: #292927;
+}
+
+/*---icon-bar bg color---*/
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background-color: #292927;
+}
+.navbar-inverse .navbar-toggle {
+	border-color: #005E8E; /*005E8E 1B799D*/
+}
+
+.navbar-collapse {
+  background-color: #ffcf11;
+  padding-left: 100px;
+}
+
+.dropdown .dropdown-menu .dropdown-header {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #292927;
+}
+
+.dropdownSubMenu {
+  font-size: 20px;
+  color: #292927;
+}
+
+.gonzales{
+	font-family: "Ubuntu", sans-serif;
+	font-size: 18px;
+	color: lightGray;
+}
+.design{
+	font-family: "Ubuntu", sans-serif;
+	font-size: 18px;
+	color: orangeRed;
+}
+
+@media screen and (max-width: 768px) {
+  /*---• Horizontal nav bar •---*/
+  .navbar-inverse {
+    /*height: 40px;*/
+    margin-top: -30px;
+    /*border: 1px solid grey;*/
+  }
+  #logoID {
+    width: 100px;
+    /*display: block;*/
+   /* margin-top: -36px;*/
+    /*border: solid 1px red;*/
+  }
+}

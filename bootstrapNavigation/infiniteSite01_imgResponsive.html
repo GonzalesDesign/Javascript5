@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Infinite Site 01 Image Responsive</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Content">
+	<meta name="Odee" content="GonzalesDesign RLGonzales">
+	<!--link rel="icon" href="../../favicon.ico"-->
+
+	<!--|==========================================| LOCAL CSS |==========================================|-->
+	<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/infiniteSiteImgResponsive.css" rel="stylesheet">
+	<!--||===========================================================================================================||-->
+
+	<!--|==========================================| CDN CSS |==========================================|-->
+	<!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"-->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<!--||===========================================================================================================||-->
+	
+	<!--|==========================================| PAGE CSS |==========================================|-->
+	<style>
+	.navbar-headerX{
+		border: 0px solid #aaa;
+	};
+
+	
+	</style>
+	<!--||===========================================================================================================||-->
+	
+
+</head>
+<!--============| end of head |============-->
+
+<body>
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> <!-- navbar-default navbar-inverse-->	
+	<!-- Branding logo -->
+	<a class="navbar-brand" href="#"><img src="images/RLG_Logo.png" alt="GonzalesDesign"></a>
+	<!-- Collapsed menu bar with icon-bar buttons -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle Navigation</span> <!-- sr-only: for screen reader use only -->
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="navbar-brandTxt">
+			<a href="index.html" ><span class="gonzales">Gonzales</span><span class="design">Design</span></a>
+		</div>
+	</div> <!-- end navbar-header -->
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<!-- <li><a href="index.html" ><span class="gonzales">Gonzales</span><span class="design">Design</span></a></li> -->
+			<!-- <li class="active"><a href="#">Home</a></li> -->
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">About</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="http://www.facebook.com">Facebook</a></li>
+					<li><a href="http://www.twitter.com">Twitter</a></li>
+					<li><a href="http://www.linkedIn.com">LinkedIn</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav> <!-- end navigation -->
+
+<!-- IMAGE RESPONSIVENESS: 3 Different combo -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="well">
+				<img src="images/arigato.jpg" alt="Arigato" class="horizontalCenter">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6"> <!-- Bootstrap Grid System: "col-sm-6" = Column width in a Small screen takes 6 columns of 12-->
+			<div class="well">
+				<img src="images/arigato.jpg" alt="Arigato" class="img-responsive">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-12">
+			<div class="well">
+				<img src="images/notGivingUp.jpg" alt="Not Giving Up" class="img-responsive horizontalCenter">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <hr><hr><hr><hr> -->
+
+
+
+<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<] SCRIPT DECLARATIONS [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+	<script type="text/javascript">
+		// $function(){
+			//window.open("infiniteSite01.html","fs","fullscreen=yes")
+		// }
+   </script>
+
+	<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<] JAVASCRIPTS [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--|==========================================| CDN JS |==========================================|-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
+	<!--script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script-->
+		<!--||===========================================================================================================||-->
+	<!--|==========================================| LOCAL JS |==========================================|-->
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/docs.min.js"></script>
+	<script src="js/ie-emulation-modes-warning.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	<!--script src="js/navButtonHiliter.js"></script-->
+	<!--||===========================================================================================================||-->
+	</body>
+</html>

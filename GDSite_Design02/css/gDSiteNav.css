@@ -1,0 +1,124 @@
+
+/*-----=====| Navigation |=====-----*/
+.nav {
+	padding-left: 20px;
+}
+.navbar{
+	/*border: 1px solid red;*/
+	opacity: 1;
+}
+.navbar-nav {
+	/*margin: 7.5px -15px;*/
+	font-size: 18px;
+}
+.navbar-brand{
+	float: left;
+	height: 50px;
+	/*font-size: 18px;*/
+	line-height: 20px;
+	/*width: 100px;*/
+	/*height: 50px;*/
+	/*padding: 0px;
+	margin-left: 100px;
+	border: 1px solid red;*/
+}
+
+/*-----| Logo style |-----*/
+.navbar-brand>img {
+	display: block;
+	margin-top: -44px;
+}
+
+
+.navbar-inverse {
+	background-color: #0B8EBF;
+	/*border-color: #080808;*/
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	color: orange;
+	background-color: orangeRed;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #ddd;
+}
+/*---icon-bar bg color---*/
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background-color: orangeRed;
+}
+.navbar-inverse .navbar-toggle {
+	border-color: #005E8E; /*005E8E 1B799D*/
+}
+
+.navbar-brandTxt{
+  margin: 7px 20px 0px -20px;
+}
+.gonzales{
+	font-family: "Ubuntu", sans-serif;
+	font-size: 22px;
+	color: lightGray;
+}
+.design{
+	font-family: "Ubuntu", sans-serif;
+	font-size: 22px;
+	color: orangeRed;
+}
+
+/*-----=====| MEDIA QUERIES |=====-----*/
+/*Screen size larger that 768px |=====================------------------*/
+/*.nav {
+	padding-left: 20px;
+	/!*padding-top: 20px;*!/
+}*/
+.navbar-fixed-top {
+	top: 80px;
+	border-width: 0 0 0px;
+}
+.rowTopPad{
+	padding-top: 20%;
+	border: 0px solid;
+}
+.dropdown{
+  margin-left: 0px;
+}
+/*Tablet Window Size |=====================------------------*/
+@media screen and (max-width: 768px) {
+	.nav {
+		padding-left: 20px;
+		/*padding-top: 20px;*/
+	}
+	.navbar-fixed-top {
+		top: 50px;
+	}
+	h1.largeH1{
+		font-size: 3.4em;
+		/*line-height:90%;*/
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+	}
+}
+
+@media screen and (max-width: 765px) {
+  .dropdown {
+    margin-left: 100px;
+  }
+}
+/*Smartphone Window Size |=====================------------------*/
+@media screen and (max-width: 480px) {
+	.nav {
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	.navbar-fixed-top {
+		top: 20px;
+	}
+	.rowTopPad{
+		padding-top: 30%;
+	}
+	h1.largeH1{
+		font-size: 2em;
+		/*line-height:90%;*/
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+	}
+  /*.dropdown{
+    margin-left: 100px;
+  }*/
+} /*----- end media qreries -----*/

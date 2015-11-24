@@ -1,0 +1,67 @@
+body{
+	background-color: #fff;
+	padding-top: 60px; /*Push down the banner from the top to clear with navbar*/
+}
+p{
+	font-family: Lato;
+	font-size: 16px;
+	color: #556;
+}
+h1, h2, h3, h4{
+	font-family: Ubuntu;
+}
+/*-----=====| BOOTSTRAP CONTAINERS |=====-----*/
+.testimonialsContainer{
+	background-color: #eee
+}
+.featuresContainer{
+	background-color: #eef
+}
+.galleryContainer{
+	background-color: #eff
+}
+.faqContainer{
+	background-color: #edf
+}
+.contactContainer{
+	background-color: #edd
+}
+.footerContainer{
+	background-color: #ddd
+} /*--- end bootstrap containers ---*/
+
+.jumboTxtCtr{
+	border: 1px solid #ddd
+}
+.featuresRow{
+	padding: 50px 0px;
+	border: 0px solid #eee
+}
+em{ /*---italics---*/
+	color: #aaa;
+}
+.panel{
+	background-color: #F9FFE9;
+}
+
+/*-----=====| MEDIA QUERIES |=====-----*/
+/*Screen size larger that 768px*/
+.btn-group-justified>.btn, .btn-group-justified>.btn-group{
+	float: none;
+	width: auto;
+}
+/*Tablet Window Size*/
+@media screen and (max-width: 768px) {
+	.btn-group-justified>.btn, .btn-group-justified>.btn-group{
+		/*display: table-cell;*/
+		float: left;
+		width: auto;
+	}
+}
+/*Smartphone Window Size*/
+@media screen and (max-width: 480px) {
+	.btn-group-justified>.btn, .btn-group-justified>.btn-group{
+		float: left;
+		width: auto;
+	}
+} /*----- end media qreries -----*/

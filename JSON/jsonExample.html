@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <style>
+    img {
+      /*height: auto;*/
+      /*float: left;*/
+      width: 100px;
+      position: fixed;
+      display: inline-block;
+      height: 100px;
+      clear: both;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div class = "container-fluid">
+  <div class = "row">
+    <h1>TITOLO UNO</h1>
+    <div class = "col-sm-6" id="images">
+      <!--<div id="images"></div>-->
+    </div>
+    <div class = "col-sm-6">
+      <h1>TITOLO DOS</h1>
+      <p>
+        Odee and John poot poot are the cutest and pinaka pilyong bata.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  (function() {
+    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    $.getJSON( flickerAPI, {
+      /*tags: "mount rainier",*/
+      tags: "hdr cars",
+      tagmode: "any",
+      format: "json"
+    })
+      .done(function( data ) {
+        $.each( data.items, function( i, item ) {
+          $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+          if ( i === 25 ) {
+            return false;
+          }
+        });
+      });
+  })();
+</script>
+
+</body>
+</html>
